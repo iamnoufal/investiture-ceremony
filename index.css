@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,800;1,400;1,600;1,900&family=Roboto:ital,wght@0,100;0,500;1,400;1,500;1,900&display=swap");
+body {
+  font-size: 2.2vw;
+  background-image: url("bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: "Montserrat", sans-serif;
+  margin:0;
+  padding:0;
+  text-align: center;
+}
+
+#top {
+  font-weight: bold;
+  padding: 2vw;
+  background-image: url("bg.jpg");
+  position: fixed;
+  width:100%;
+  text-align: center;
+  color: white
+}
+
+#menu {
+  display:flex;
+  right:0;
+  position: absolute;
+}
+
+.container {
+  margin: 0 10vw;
+  padding: 2vw 15vw;
+  margin-bottom: 4px;
+  background-color: rgba(255,255,255,0.8);
+  font-size: 1.5vw
+}
+
+#logo {
+  padding:1vw;
+  width: 7vw;
+}
+
+p {
+  text-align: justify;
+}
+
+.mob {display:none}
+
+#first {padding-top: 10.5vw}
+@media screen and (max-width:700px) {
+  body {font-size:7vw;padding:2vw}
+  #top {margin:-2vw;padding:5vw}
+  .mob {display:block;}
+  .desk {display:none}
+  .container {margin:5px 2vw;font-size:4vw;padding:1vw 3vw}
+  h2 {font-size:5vw}
+  #first {padding-top:14vw}
+}
